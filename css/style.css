@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    border: none;
+}
+
+body{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: #e0e8ff;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/*========================================================================*/
+
+/*Colors*/
+h1,
+.plan-txt p:nth-child(1){
+    color: hsl(223, 47%, 23%);
+}
+
+header p,
+.plan-txt p:nth-child(2),
+.buttons p:nth-child(2){
+    color: hsl(224, 23%, 55%);
+}
+
+/* Card*/
+
+main{
+    margin-top: 7rem;
+}
+
+.hero{
+    width: 21rem;
+    border-radius: 1rem 1rem 0 0;
+    transform: translateY(.3rem);
+}
+
+.card{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 0 0 1rem 1rem;
+    width: 21rem;
+    padding: 2rem 0 2rem 0;
+    background-color: white;
+}
+
+@media(min-width: 520px){
+    .hero, .card{ width: 26rem;}
+}
+
+/* 1.Header*/
+
+header{
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16rem;
+}
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 2.Gray Rectangle*/
+
+.info{
+    --padding-right: 2rem;
+    --padding-top: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    width: 16rem;
+    border-radius: 1rem;
+    gap: 3.7rem;
+    padding: var(--padding-top) var(--padding-right) var(--padding-top) var(--padding-right);
+    background-color: hsl(225, 100%, 98%); 
+}
+.plan{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan-txt{
+    width: 6rem;
+}
+.plan-txt p:first-child{
+    font-weight: 700;
+    margin-bottom: .35rem;
+}
+.plan-txt p:last-child{
+    font-size: .95rem;
+}
+
+
+a{
+    font-size: .8rem;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    transition: 300ms;
+}
+a:hover{
+    color: hsl(245, 71%, 68%);
+    cursor: pointer;
+}
+
+/* 3.Buttons */
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1.5rem;
+    width: 18rem;
+}
+
+.buttons p:nth-child(1){
+    --padding-right: 3rem;
+    --padding-top: 1rem;
+
+
+    border-radius: 1rem;
+    padding: var(--padding-top) var(--padding-right) var(--padding-top) var(--padding-right);
+    font-size: .9rem;
+    font-weight: 700;
+    color: hsl(225, 100%, 94%);
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 20px 1px hsl(225, 100%, 98%);
+    transition: 200ms;
+}
+.buttons p:nth-child(1):hover{
+    cursor: pointer;
+    background-color: hsl(245, 71%, 68%);
+   
+}
+
+.buttons p:nth-child(2){
+    width: 6.5rem;
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 1rem;
+    transition: 200ms;
+}
+.buttons p:nth-child(2):hover{
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
